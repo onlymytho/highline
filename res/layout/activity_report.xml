@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:animateLayoutChanges="true"
+    android:configChanges="orientation|screenSize">
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/report"
+        android:paddingLeft="@dimen/default_text_left_margin"
+        android:paddingTop="@dimen/default_text_top_margin"
+        android:text="REPORT"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+<fragment
+    android:id="@+id/frag_report"
+    android:name="com.hlresidential.aceyourexam.ReportFragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_weight="3.87" />
+<fragment
+    android:id="@+id/frag_report02"
+    android:name="com.hlresidential.aceyourexam.ReportFragment02"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_weight="4.29" />
+<fragment
+    android:id="@+id/frag_report03"
+    android:name="com.hlresidential.aceyourexam.PreTestFragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_weight="4.29" />
+/>
+
+</LinearLayout>
+</RelativeLayout>
+<!-- <fragment
+    android:id="@+id/frag_report02"
+    android:name="com.hlresidential.testapp.ReportFragment02"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_weight="4.29" />
+<fragment
+    android:id="@+id/frag_report03"
+    android:name="com.hlresidential.testapp.ReportFragment03"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_weight="4.29"  -->

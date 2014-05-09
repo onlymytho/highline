@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:divider="@color/gray"
+    android:dividerHeight="5dp" >
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_text_left_margin"
+        android:layout_marginRight="@dimen/default_text_left_margin"
+        android:orientation="vertical" >
+
+        <com.hlresidential.aceyourexam.TextViewFont
+            android:id="@+id/tv_question"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_question_id"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/default_text_top_margin"
+            android:text="q"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/view_answers"
+            android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_question"
+            android:paddingLeft="@dimen/default_text_top_margin" 
+            android:visibility="gone">
+
+            <com.hlresidential.aceyourexam.TextViewFont
+                android:id="@+id/tv_answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/default_text_top_margin"
+                android:text="A. Answer 1."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <com.hlresidential.aceyourexam.TextViewFont
+                android:id="@+id/tv_answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_answer1"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/default_text_top_margin"
+                android:text="B. Answer 2."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <com.hlresidential.aceyourexam.TextViewFont
+                android:id="@+id/tv_answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_answer2"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/default_text_top_margin"
+                android:text="C. Answer 3."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <com.hlresidential.aceyourexam.TextViewFont
+                android:id="@+id/tv_answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_answer3"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/default_text_top_margin"
+                android:text="D. Answer 4."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:paddingBottom="@dimen/default_text_top_margin"  />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="fill_parent"
+
+                android:layout_height="3dip"
+                android:layout_below="@+id/tv_answer4"
+                android:background="#000000"
+                android:paddingTop="@dimen/default_text_top_margin" />
+
+            <com.hlresidential.aceyourexam.TextViewFont
+                android:id="@+id/lit_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/separator"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/default_text_top_margin"
+                android:text="Correct Answer: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/test"
+                android:textStyle="bold" />
+
+            <com.hlresidential.aceyourexam.TextViewFont
+                android:id="@+id/tv_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/lit_correct"
+                android:layout_alignBottom="@+id/lit_correct"
+                android:layout_toRightOf="@+id/lit_correct"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/default_text_top_margin"
+                android:text="A "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <com.hlresidential.aceyourexam.TextViewFont
+            android:id="@+id/tv_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_question_id"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/default_text_top_margin"
+            android:text="a"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <com.hlresidential.aceyourexam.TextViewFont
+            android:id="@+id/tv_descripton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_answer"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/default_text_top_margin"
+            android:paddingTop="@dimen/default_text_top_margin"
+            android:text="d"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</RelativeLayout>

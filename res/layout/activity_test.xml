@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:configChanges="orientation|screenSize">
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/test"
+        android:paddingLeft="@dimen/default_text_left_margin"
+        android:paddingTop="@dimen/default_text_top_margin"
+        android:text="TEST"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+
+
+       <ImageView
+        android:id="@+id/iv_pause_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                        android:layout_marginRight="6dp"
+        android:layout_alignBottom="@+id/tv_title"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/paused_btn"
+        android:visibility="gone" />
+
+       <com.hlresidential.aceyourexam.TextViewFont
+           android:id="@+id/tv_clock"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/tv_title"
+           android:layout_toRightOf="@+id/iv_hourglass"
+           android:paddingBottom="2dp"
+           android:paddingRight="6dp"
+           android:text="29:59"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="@color/white" />
+
+       <ImageView
+           android:id="@+id/iv_hourglass"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/tv_clock"
+           android:layout_marginLeft="30dp"
+           android:layout_toRightOf="@+id/btn_pauser"
+           android:paddingBottom="2dp"
+           android:paddingLeft="2dp"
+           android:paddingRight="2dp"
+           android:paddingTop="2dp"
+           android:src="@drawable/hourglass" />
+
+       <Button
+           android:id="@+id/btn_pauser"
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/tv_title"
+           android:layout_centerHorizontal="true"
+           android:text="  | |  " />
+
+          > 
+           <fragment
+        android:id="@+id/list"
+        android:name="com.hlresidential.aceyourexam.TestFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_title" />
+           
+
+           
+
+
+</RelativeLayout>

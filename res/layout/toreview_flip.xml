@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AAA"
+    android:orientation="vertical"
+ >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollview_even"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="4dp"
+                android:verticalScrollbarPosition="right" >
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_even"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_even_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="0.09"
+                        android:paddingBottom="@dimen/default_text_left_margin"
+                        android:paddingLeft="@dimen/default_text_left_margin"
+                        android:paddingRight="@dimen/default_text_left_margin"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:text="There are no questions with incorrect answeres that need review at this time."
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_even"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" >
+
+                        <RadioButton
+                            android:id="@+id/rb_even_answer1"
+                            android:layout_width="316dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="Study, Practice then take a Test."
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" 
+                            android:button="@drawable/custom_radio_button" />
+
+                        <RadioButton
+                            android:id="@+id/rb_even_answer2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="Question(s) that you need To Review"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" 
+                            android:button="@drawable/custom_radio_button"  />
+
+                        <RadioButton
+                            android:id="@+id/rb_even_answer3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="will appear here."
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" 
+                             android:button="@drawable/custom_radio_button" />
+
+                        <RadioButton
+                            android:id="@+id/rb_even_answer4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="Good Luck."
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" 
+                            android:button="@drawable/custom_radio_button"  />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/view_even"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tv_100_questions"
+                        android:layout_marginLeft="@dimen/default_hr_margin"
+                        android:layout_marginRight="@dimen/default_hr_margin"
+                        android:layout_marginTop="@dimen/default_text_top_margin"
+                        android:background="#000000"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_even_descripton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_answer"
+                        android:layout_marginBottom="30dp"
+                        android:layout_weight="0.16"
+                        android:paddingBottom="@dimen/default_text_top_margin"
+                        android:paddingLeft="@dimen/default_text_left_margin"
+                        android:paddingRight="@dimen/default_text_left_margin"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:text="EVEN Description"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:visibility="gone"
+						android:textStyle="italic"	/>
+
+                    <TextView
+                        android:id="@+id/tv_even_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="35dp"
+                        android:layout_weight="0.09"
+                        android:text="Even TextView"
+                        android:visibility="gone" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_even_prev"
+                            style="@style/btnStylePrev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:paddingLeft="@dimen/default_text_left_margin"
+                            android:text="Prev"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/btn_even_submit"
+                            style="@style/btnStylePrev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:paddingLeft="@dimen/default_text_left_margin"
+                            android:text="Submit"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btn_even_next"
+                            style="@style/btnStylePrev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:paddingLeft="@dimen/default_text_left_margin"
+                            android:text="Next"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/scrollview_odd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="4dp"
+                android:verticalScrollbarPosition="left" >
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_odd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_odd_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="0.09"
+                        android:paddingBottom="@dimen/default_text_left_margin"
+                        android:paddingLeft="@dimen/default_text_left_margin"
+                        android:paddingRight="@dimen/default_text_left_margin"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:text="There are no questions with incorrect answeres that need review at this time."
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_odd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" >
+
+                        <RadioButton
+                            android:id="@+id/rb_odd_answer1"
+                            android:layout_width="317dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="Study, Practice then take a Test."
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" 
+                            android:button="@drawable/custom_radio_button"  />
+
+                        <RadioButton
+                            android:id="@+id/rb_odd_answer2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="Question(s) that you need To Review"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" 
+                            android:button="@drawable/custom_radio_button"  />
+
+                        <RadioButton
+                            android:id="@+id/rb_odd_answer3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="will appear here."
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" 
+                            android:button="@drawable/custom_radio_button"  />
+
+                        <RadioButton
+                            android:id="@+id/rb_odd_answer4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="Good Luck."
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"  
+                            android:button="@drawable/custom_radio_button" />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/view_odd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tv_100_questions"
+                        android:layout_marginLeft="@dimen/default_hr_margin"
+                        android:layout_marginRight="@dimen/default_hr_margin"
+                        android:layout_marginTop="@dimen/default_text_top_margin"
+                        android:background="#000000"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_odd_descripton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_answer"
+                        android:layout_marginBottom="30dp"
+                        android:layout_weight="0.16"
+                        android:paddingBottom="@dimen/default_text_top_margin"
+                        android:paddingLeft="@dimen/default_text_left_margin"
+                        android:paddingRight="@dimen/default_text_left_margin"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:text="ODD Description"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:visibility="gone" 
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:id="@+id/tv_odd_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="35dp"
+                        android:layout_weight="0.09"
+                        android:text="TextViewOdd"
+                        android:visibility="gone" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_odd_prev"
+                            style="@style/btnStylePrev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:paddingLeft="@dimen/default_text_left_margin"
+                            android:text="Prev"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/btn_odd_submit"
+                            style="@style/btnStylePrev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:paddingLeft="@dimen/default_text_left_margin"
+                            android:text="Submit"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btn_odd_next"
+                            style="@style/btnStylePrev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:paddingLeft="@dimen/default_text_left_margin"
+                            android:text="Next"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
+<!-- android:scrollbarSize="@integer/scrollbar_size" 
+
+				android:background="@color/study"
+				android:overScrollMode="ifContentScrolls"
+				
+				
+				    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#AAA"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="100dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/practice"
+            android:gravity="left|top"
+            android:paddingLeft="@dimen/default_text_left_margin"
+            android:text="Prev"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_animate"
+            android:layout_width="96dp"
+            android:layout_height="16dp"
+            android:background="@color/practice"
+            android:gravity="center|top"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="Back"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/practice"
+            android:gravity="right|top"
+            android:paddingRight="@dimen/default_text_left_margin"
+            android:text="Next"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    
+    
+    
+                    <Button
+                        android:id="@+id/btn_submit_even"
+                        android:layout_width="163dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/default_text_top_margin"
+                        android:layout_marginBottom="30dp"
+                        android:text="Submit" />
+                        
+                                            <Button
+                        android:id="@+id/btn_submit_odd"
+                        android:layout_width="163dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/default_text_top_margin"
+                        android:text="Submit" 
+                        android:layout_marginBottom="30dp"/>
+                        
+                         -->

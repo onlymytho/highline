@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hlresidential.aceyourexam.TextViewFont xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_testdate_dialog_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@color/afteryourexam"
+    android:paddingLeft="@dimen/default_text_left_margin"
+    android:paddingTop="@dimen/default_text_top_margin"
+    android:text="Would you like to add a Test Date for your NY Realtor License?"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="@color/white" >
+
+</com.hlresidential.aceyourexam.TextViewFont>

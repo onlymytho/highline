@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation|screenSize"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:id="@+id/relativecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation|screenSize" >
+    
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/study"
+        android:paddingLeft="@dimen/default_text_left_margin"
+        android:paddingTop="@dimen/default_text_top_margin"
+        android:text="STUDY"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <fragment
+        android:id="@+id/listcustom"
+        android:name="com.hlresidential.aceyourexam.StudyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/surfaceViewPrev"
+        android:layout_below="@+id/tv_title" />
+
+     <TextureView
+         android:id="@+id/surfaceViewPrev"
+         android:layout_width="wrap_content"
+         android:layout_height="25dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:background="@color/transparent" />
+
+
+
+</RelativeLayout>
+</LinearLayout>
+<!--      <com.hlresidential.aceyourexam.TextViewFont
+         android:id="@+id/tv_add"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/surfaceViewPrev"
+                     android:gravity="center_vertical|center_horizontal"
+            android:text="Your AD Here, semi annoying."
+            android:background="@color/white" 
+            android:textColor="@color/test"
+         android:textAppearance="?android:attr/textAppearanceMedium" /> -->

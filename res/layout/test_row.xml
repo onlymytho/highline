@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:divider="@color/gray"
+    android:dividerHeight="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <com.hlresidential.aceyourexam.TextViewFont
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_question_id"
+            android:paddingBottom="@dimen/default_text_top_margin"
+            android:paddingTop="@dimen/default_text_top_margin"
+            android:text="Q0. This is not a real question but should be."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rb_answer1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_question_id"
+                android:checked="false"
+                android:gravity="top"
+                android:paddingBottom="@dimen/default_text_top_margin"
+                android:text="A. "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_answer2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_answer1"
+                android:checked="false"
+                android:gravity="top"
+                android:paddingBottom="@dimen/default_text_top_margin"
+                android:text="B. "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_answer3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_answer2"
+                android:checked="false"
+                android:gravity="top"
+                android:paddingBottom="@dimen/default_text_top_margin"
+                android:text="C. "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_answer4"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_answer3"
+                android:checked="false"
+                android:gravity="top"
+                android:paddingBottom="@dimen/default_text_top_margin"
+                android:text="D. "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <com.hlresidential.aceyourexam.TextViewFont
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/default_text_top_margin"
+            android:paddingTop="@dimen/default_text_top_margin"
+            android:text="d"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:visibility="invisible" />
+
+        <com.hlresidential.aceyourexam.TextViewFont
+            android:id="@+id/htv_rowid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rowid"
+            android:visibility="invisible" />
+
+        <com.hlresidential.aceyourexam.TextViewFont
+            android:id="@+id/htv_answerkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="answer_key"
+            android:visibility="invisible" />
+
+        <com.hlresidential.aceyourexam.TextViewFont
+            android:id="@+id/htv_last_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="last_answer"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal"
+            android:visibility="invisible" />
+
+        <com.hlresidential.aceyourexam.TextViewFont
+            android:id="@+id/htv_answerstring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="answerstring"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>

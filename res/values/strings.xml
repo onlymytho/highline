@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_version">v 1.0</string>
+    <string name="str_databasepath">//data//data//%s//databases//</string>
+    <string name="str_error_while_checking_db">Error while checking db</string>
+    <string name="str_copying_error">Copying error</string>
+    <string name="str_error_copying_database_exclamation">Error copying database!</string>
+    <string name="str_caps_more_questions">MORE QUESTIONS</string>
+    <string name="str_caps_aboutus">ABOUT US</string>
+	<string name="str_menu">Menu</string>
+
+	    <string name="frontside"><b>Frontside</b>
+      
+      \n\nThis code snipped generalizes the 3D flip animation 
+      from the Android API Demos.
+      
+      \n\nTap somewhere on the screen.
+    </string>
+    <string name="backside"><b>Backside</b>
+      
+      \n\nThis effect should work with a pair of arbitrary Views 
+      placed in a FrameLayout container.
+      
+      \n\nThe source on http://github.com/rodja/FlipViewDemo hopefully requires 
+      only little modification to be used in other contexts.
+    </string>
+    
+     <string name="title_edittext_preference">Edit text preference</string>
+    <string name="summary_edittext_preference">An example that uses an edit text dialog</string>
+    <string name="dialog_title_edittext_preference">Enter your favorite animal</string>
+
+    <string name="launch_preferences">Launch preferences</string>
+    <string name="preference_attributes">Preference attributes</string>
+
+    <string name="title_screen_preference">Screen preference</string>
+    <string name="summary_screen_preference">Shows another screen of preferences</string>
+    <string name="title_fragment_preference">Fragment preference</string>
+    <string name="summary_fragment_preference">Shows another fragment of preferences</string>
+    <string name="title_next_screen_toggle_preference">Toggle preference</string>
+    <string name="summary_next_screen_toggle_preference">Preference that is on the next screen but same hierarchy</string>
+    <string name="title_intent_preference">Intent preference</string>
+    <string name="summary_intent_preference">Launches an Activity from an Intent</string>
+    <string name="title_my_preference">My preference</string>
+    <string name="summary_my_preference">This is a custom counter preference</string>
+    <string name="title_advanced_toggle_preference">Haunted preference</string>
+    <string name="summary_on_advanced_toggle_preference">I\'m on! :)</string>
+    <string name="summary_off_advanced_toggle_preference">I\'m off! :(</string>
+    <string name="title_parent_preference">Parent checkbox preference</string>
+    <string name="summary_parent_preference">This is visually a parent</string>
+    <string name="title_child_preference">Child checkbox preference</string>
+    <string name="summary_child_preference">This is visually a child</string>
+    
+    
+    
+    
+        <string name="str_notify_wifi_1">TestApp Starting</string>
+
+    <string name="str_notify_wifi_3">TestApp - Reset Done</string>
+
+    <string name="str_wifi_info1">Only n days to your test</string>
+
+    <string name="str_notify_wifi_title3">Study Real Estate for Test</string>
+    <string name="str_wifi_context3">TestApp reminder</string>
+    <string name="title_checkbox_preference">Remind me</string>
+    <string name="summary_checkbox_preference">Enable notification when reset</string>
+
+
+    <string name="inline_preferences">Notifications</string>
+    <string name="dialog_based_preferences">TestApp Reminder preferences</string>
+    <string name="title_list_preference">TestApp Reminder to be used</string>
+    <string name="summary_list_preference">Time frame in which to be reminded</string>
+    <string name="dialog_title_list_preference">Choose one</string>
+    <string name="str_by_androidfactorem">Only n days to your test</string>
+    <string name="str_wifi_airwaves_exit">TestApp reminder scheduled</string>
+    <string name="str_wifi_airwaves_stopped">" TestApp Reminder stopped"</string>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/splash_title_left_margin"
+        android:paddingTop="30dp"
+        android:text="MORE QUESTIONS"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_thebest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_title"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:maxHeight="@android:dimen/app_icon_size"
+        android:paddingLeft="@dimen/splash_title_left_margin"
+        android:text="LETS BE THE BEST!"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_100_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_thebest"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="39dp"
+        android:paddingBottom="@dimen/default_text_top_margin"
+        android:text="100 more questions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_100_questions"
+        android:layout_marginLeft="@dimen/default_hr_margin"
+        android:layout_marginRight="@dimen/default_hr_margin"
+        android:background="#000000"
+        android:paddingTop="@dimen/default_text_top_margin" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_100_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_100_questions"
+        android:layout_alignBottom="@+id/tv_100_questions"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="31dp"
+        android:paddingLeft="@dimen/splash_title_left_margin"
+        android:text="$1.99 *"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_300_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="18dp"
+        android:paddingBottom="@dimen/default_text_top_margin"
+        android:text="300 more questions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_300_questions"
+        android:layout_marginLeft="@dimen/default_hr_margin"
+        android:layout_marginRight="@dimen/default_hr_margin"
+        android:background="#000000"
+        android:paddingTop="@dimen/default_text_top_margin" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_300_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_300_questions"
+        android:layout_alignBottom="@+id/tv_300_questions"
+        android:layout_alignLeft="@+id/tv_100_cost"
+        android:paddingLeft="@dimen/splash_title_left_margin"
+        android:text="$4.99 *"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_500_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_100_questions"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="22dp"
+        android:paddingBottom="@dimen/default_text_top_margin"
+        android:text="500 more questions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_500_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="@dimen/splash_title_left_margin"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        
+        
+        android:layout_alignBaseline="@+id/tv_500_questions"
+        android:layout_alignBottom="@+id/tv_500_questions"
+        android:layout_alignRight="@+id/tv_300_cost"
+        android:text="$7.99 *" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tv_500_cost"
+        android:layout_marginBottom="14dp"
+        android:text="* Taxes not included."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    />
+
+</RelativeLayout>

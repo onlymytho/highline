@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation|screenSize"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:id="@+id/frag_practice_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation|screenSize" >
+
+      
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/practice"
+        android:paddingLeft="@dimen/default_text_left_margin"
+        android:paddingTop="@dimen/default_text_top_margin"
+        android:text="PRACTICE"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+            <fragment
+                android:id="@+id/frag_practice"
+                android:name="com.hlresidential.aceyourexam.PracticeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/tv_title"
+                android:tag="Practice" />
+
+              <TextureView
+        android:id="@+id/surfaceViewNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_SV_next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btn_SV_next"
+        android:background="@color/white" />
+
+    <TextureView
+        android:id="@+id/surfaceViewSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/btn_SV_next"
+        android:layout_toLeftOf="@+id/btn_SV_next"
+        android:background="@color/white" />
+
+    <TextureView
+        android:id="@+id/surfaceViewPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btn_SV_prev"
+        android:layout_alignTop="@+id/surfaceViewSubmit"
+        android:background="@color/white" />
+    <TextureView
+         android:id="@+id/surfaceViewPrev"
+         android:layout_width="wrap_content"
+         android:layout_height="25dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:background="@color/transparent" />
+
+    <Button
+        android:id="@+id/btn_SV_next"
+        style="@style/btnStyleNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/surfaceViewPrev"
+        android:layout_alignParentRight="true"
+        android:gravity="left|top"
+        android:onClick="mySVBtnClicked"
+        android:paddingLeft="@dimen/default_text_left_margin"
+        android:text="Next"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/btnStyleSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/surfaceViewPrev"
+        android:layout_toLeftOf="@+id/surfaceViewNext"
+        android:gravity="left|top"
+        android:onClick="mySVBtnClicked"
+        android:paddingLeft="@dimen/default_text_left_margin"
+        android:text="Submit"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_SV_prev"
+        style="@style/btnStylePrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/surfaceViewPrev"
+        android:layout_alignParentLeft="true"
+        android:gravity="left|top"
+        android:onClick="mySVBtnClicked"
+        android:paddingLeft="@dimen/default_text_left_margin"
+        android:text="Prev"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <PreferenceCategory android:title="@string/inline_preferences" >
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="notification_preference"
+            android:summary="@string/summary_checkbox_preference"
+            android:title="@string/title_checkbox_preference" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/dialog_based_preferences" >
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/dialog_title_list_preference"
+            android:entries="@array/entries_list_preference"
+            android:entryValues="@array/entryvalues_list_preference"
+            android:key="PREF_UPDATE_FREQ"
+            android:summary="@string/summary_list_preference"
+            android:title="@string/title_list_preference" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

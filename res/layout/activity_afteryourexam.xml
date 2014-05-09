@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation|screenSize"
+    android:orientation="vertical" >
+<RelativeLayout
+     android:id="@+id/relativecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/default_text_top_margin"
+        android:background="@color/afteryourexam"
+        android:paddingLeft="@dimen/default_text_left_margin"
+        android:paddingTop="@dimen/default_text_top_margin"
+        android:text="After Your Exam"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:paddingLeft="15dp" 
+        android:paddingRight="15dp" 
+        android:paddingTop="15dp" 
+        android:paddingBottom="15dp" >
+
+            <com.hlresidential.aceyourexam.TextViewFont
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignRight="@+id/textView8"
+
+                android:text="First and foremost, congratulations on embarking on a challenging yet rewarding career which is New York Real Estate! The first few months are crucial in this industry and tend to make or break most aspiring Real Estate sharks. Deciding which brokerage is best for you is a huge decision and you should consider many important factors in your choice:
+\n\n• Style\n
+The brokerage you pick should be a good match for your personality. 
+\n\n• Support\n
+
+The most important component for agents just starting. How is the training program? Is there mentorship? Does the brokerage have a strong management staff to help you close deals and guide you through inevitable complex situations?
+\n\n• $Money$\n
+What is the commission split between you and the broker? Is there desk fees? Start up fees? Transaction fees? Some brokers advertise themselves at a certain percentage but after the fees its actually much lower. 
+\n\n• Career\n
+New York Real Estate is unlike any other market in the world! We are at the center of the universe so you want to be at a brokerage with the ability to advance your career. Start out doing rentals is ideal but sales leads and clients can come from random and chance opportunities. Make sure you are at a Brokerage who can assist with this process and is committed to your growth as a Real Estate Salesperson. 
+
+Highline Residential is part of a Real Estate conglomerate consisting of Danconia Management (Property Management), Danconia Interiors (Design and Construction), Highline Commercial (Commercial Real Estate) and Ensemble (Coworking space). This business model provides an abundance of opportunities and the ability to pursue any type of Real Estate transaction. For more information on joining our team please contact us at careers@hlresidential.com.
+
+\n\nGood luck!"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    </ScrollView>
+     <TextureView
+         android:id="@+id/surfaceViewPrev"
+         android:layout_width="wrap_content"
+         android:layout_height="35dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:background="@color/transparent" />
+    
+</RelativeLayout>
+</LinearLayout>

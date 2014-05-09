@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation|screenSize" >
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/test"
+        android:paddingLeft="@dimen/default_text_left_margin"
+        android:paddingTop="@dimen/default_text_top_margin"
+        android:text="TEST"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="@dimen/default_text_left_margin"
+        android:paddingTop="5dp"
+        android:text="20s"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_no_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="@dimen/default_text_left_margin"
+        android:text="87"
+        android:textSize="40sp" />
+
+    <com.hlresidential.aceyourexam.TextViewFont
+        android:id="@+id/tv_recommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_no_correct"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="@dimen/default_text_left_margin"
+        android:layout_toRightOf="@+id/tv_no_correct"
+        android:text="Study more!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_below="@+id/tv_no_correct"
+        android:background="#000000"/>
+
+    <fragment
+        android:id="@+id/listcustom"
+        android:name="com.hlresidential.aceyourexam.StudyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/separator" />
+
+</RelativeLayout>
+<!--
+         <fragment
+        android:id="@+id/listcustom"
+        android:name="com.hlresidential.testapp.StudyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_title" />
+-->
+

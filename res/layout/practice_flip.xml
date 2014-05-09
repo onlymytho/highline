@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AAA"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollview_even"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="4dp"
+                android:verticalScrollbarPosition="right" >
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_even"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_even_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="0.09"
+                        android:paddingBottom="@dimen/default_text_left_margin"
+                        android:paddingLeft="@dimen/default_text_left_margin"
+                        android:paddingRight="@dimen/default_text_left_margin"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:text="EVEN Question"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_even"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" >
+
+                        <RadioButton
+                            android:id="@+id/rb_even_answer1"
+                            android:layout_width="316dp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/custom_radio_button"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="EVEN Answer 1"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_even_answer2"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:button="@drawable/custom_radio_button"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="EVEN Answer 2"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_even_answer3"
+                            android:layout_width="299dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:button="@drawable/custom_radio_button"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="EVEN Answer 3"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_even_answer4"
+                            android:layout_width="298dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:button="@drawable/custom_radio_button"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="EVEN Answer 4"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/view_even"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tv_100_questions"
+                        android:layout_marginLeft="@dimen/default_hr_margin"
+                        android:layout_marginRight="@dimen/default_hr_margin"
+                        android:layout_marginTop="@dimen/default_text_top_margin"
+                        android:background="#000000"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_even_descripton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_answer"
+                        android:layout_marginBottom="30dp"
+                        android:layout_weight="0.16"
+                        android:paddingBottom="@dimen/default_text_top_margin"
+                        android:paddingLeft="@dimen/default_text_left_margin"
+                        android:paddingRight="@dimen/default_text_left_margin"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:text="EVEN Description"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="italic"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_even_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="35dp"
+                        android:layout_weight="0.09"
+                        android:text="Even TextView"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/scrollview_odd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="4dp"
+                android:verticalScrollbarPosition="left" >
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_odd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_odd_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="0.09"
+                        android:paddingBottom="@dimen/default_text_left_margin"
+                        android:paddingLeft="@dimen/default_text_left_margin"
+                        android:paddingRight="@dimen/default_text_left_margin"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:text="ODD Question"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_odd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" >
+
+                        <RadioButton
+                            android:id="@+id/rb_odd_answer1"
+                            android:layout_width="317dp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/custom_radio_button"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="ODD Answer 1"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_odd_answer2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:button="@drawable/custom_radio_button"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="ODD Answer 2"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_odd_answer3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:button="@drawable/custom_radio_button"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="ODD Answer 3"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_odd_answer4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tv_question_id"
+                            android:button="@drawable/custom_radio_button"
+                            android:gravity="top"
+                            android:paddingBottom="@dimen/default_text_top_margin"
+                            android:paddingLeft="@dimen/default_rb_left_margin"
+                            android:paddingRight="@dimen/default_text_left_margin"
+                            android:text="ODD Answer 4"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/view_odd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tv_100_questions"
+                        android:layout_marginLeft="@dimen/default_hr_margin"
+                        android:layout_marginRight="@dimen/default_hr_margin"
+                        android:layout_marginTop="@dimen/default_text_top_margin"
+                        android:background="#000000"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_odd_descripton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_answer"
+                        android:layout_marginBottom="30dp"
+                        android:layout_weight="0.16"
+                        android:paddingBottom="@dimen/default_text_top_margin"
+                        android:paddingLeft="@dimen/default_text_left_margin"
+                        android:paddingRight="@dimen/default_text_left_margin"
+                        android:paddingTop="@dimen/default_text_top_margin"
+                        android:text="ODD Description"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="italic"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_odd_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="35dp"
+                        android:layout_weight="0.09"
+                        android:text="TextViewOdd"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/correct"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/incorrect"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>
